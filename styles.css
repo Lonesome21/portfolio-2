@@ -897,6 +897,53 @@ body {
     .hobby-card p { font-size: 0.85rem; }
 }
 
+/* 成就墙 */
+.achievements-section { margin-top: 4rem; }
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.achievement-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.25rem;
+    transition: var(--transition-normal);
+}
+
+.achievement-item:hover {
+    border-color: var(--border-hover);
+    transform: translateY(-2px);
+}
+
+.achievement-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.achievement-text strong {
+    display: block;
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
+}
+
+.achievement-text p {
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+    line-height: 1.5;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .achievements-grid { grid-template-columns: 1fr; }
+}
+
 /* 联系 */
 .contact {
     background: var(--bg-primary);
