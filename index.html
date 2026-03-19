@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陆子翀 | 产品经理</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 自定义光标 -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- 导航 -->
+    <nav class="nav">
+        <div class="nav-logo">LZC</div>
+        <div class="nav-links">
+            <a href="#about" class="nav-link">关于</a>
+            <a href="#projects" class="nav-link">项目</a>
+            <a href="#experience" class="nav-link">经历</a>
+            <a href="#hobbies" class="nav-link">更多</a>
+            <a href="#contact" class="nav-link">联系</a>
+        </div>
+        <div class="nav-hamburger" id="nav-toggle">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- 移动端菜单 -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#about" class="mobile-link">关于</a>
+        <a href="#projects" class="mobile-link">项目</a>
+        <a href="#experience" class="mobile-link">经历</a>
+        <a href="#hobbies" class="mobile-link">更多</a>
+        <a href="#contact" class="mobile-link">联系</a>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-label">产品经理 · 2025届硕士 · 香港理工大学</div>
+            <h1 class="hero-title">
+                <span class="title-line">你好，我是</span>
+                <span class="title-name">陆子翀</span>
+            </h1>
+            <p class="hero-desc">
+                从用户研究到硬件落地，从交互设计到数据驱动增长。<br>
+                相信好产品是同理心与系统思维的结合。
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">
+                    <span>查看项目经历</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#contact" class="btn btn-secondary">联系我</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>向下滚动</span>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">01</span>
+                <h2 class="section-title">关于我</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="image-frame">
+                        <div class="image-placeholder">
+                            <span>陆子翀</span>
+                        </div>
+                        <div class="image-decoration"></div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h3 class="about-headline">
+                        用研究驱动设计，<br>用数据验证决策
+                    </h3>
+                    <p class="about-text">
+                        香港理工大学智能系统设计硕士在读（2025届），本科毕业于北京交通大学数字媒体艺术专业。具备从用户研究、交互设计到硬件产品落地的完整产品思维链路。
+                    </p>
+                    <p class="about-text">
+                        曾在海康威视萤石网络担任硬件产品经理实习生，主导海外市场产品优化，覆盖欧洲、拉美、东南亚等多个市场。擅长将用户洞察转化为可落地的产品方案，推动跨团队协作与项目交付。
+                    </p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="3">0</span>
+                            <span class="stat-label">段实习经历</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="4">0</span>
+                            <span class="stat-label">个核心项目</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="2">0</span>
+                            <span class="stat-label">篇英文期刊</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 教育经历 -->
+            <div class="edu-section">
+                <h4 class="skills-title">教育经历</h4>
+                <div class="edu-grid">
+                    <div class="edu-card">
+                        <div class="edu-header">
+                            <div>
+                                <h5>香港理工大学</h5>
+                                <p class="edu-degree">硕士 · 智能系统设计</p>
+                            </div>
+                            <span class="edu-year">2024.09 – 2025.10</span>
+                        </div>
+                        <div class="edu-courses">
+                            <span>用户体验与用户行为分析</span>
+                            <span>IoT硬件系统设计</span>
+                            <span>用户研究与需求洞察</span>
+                            <span>服务设计</span>
+                        </div>
+                    </div>
+                    <div class="edu-card">
+                        <div class="edu-header">
+                            <div>
+                                <h5>北京交通大学</h5>
+                                <p class="edu-degree">学士 · 数字媒体艺术</p>
+                            </div>
+                            <span class="edu-year">2020.09 – 2024.06</span>
+                        </div>
+                        <div class="edu-courses">
+                            <span>高级交互设计</span>
+                            <span>前端界面开发基础</span>
+                            <span>UI设计</span>
+                            <span>设计研究咨询</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 核心能力 -->
+            <div class="skills-section">
+                <h4 class="skills-title">核心能力</h4>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">🔍</div>
+                        <h5>用户研究</h5>
+                        <p>访谈、问卷、NVivo/Atlas.ti质性编码，行为观察转化为交互洞察</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">📋</div>
+                        <h5>产品规划</h5>
+                        <p>需求分析、功能结构梳理、用户流程优化与PRD编写</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🎨</div>
+                        <h5>交互设计</h5>
+                        <p>用户流程优化、低保真设计、交互说明文档、Figma原型</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">💻</div>
+                        <h5>技术理解</h5>
+                        <p>熟悉硬件产品结构；掌握HTML/CSS/JS前端，了解Python后端</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 项目经历 -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">02</span>
+                <h2 class="section-title">项目经历</h2>
+                <p class="section-desc">从硬件配网到家用机器人，每个项目都是一次从问题到解决方案的完整旅程</p>
+            </div>
+
+            <div class="projects-list">
+                <!-- 项目1 -->
+                <article class="project-card">
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">硬件产品 · 海外市场</span>
+                            <span class="project-year">2025.07 – 09</span>
+                        </div>
+                        <h3 class="project-title">萤石D210 蓝牙配网升级</h3>
+                        <p class="project-desc">
+                            解决欧洲海外弱网环境下 Wi-Fi 配网失败率高问题。提出 BLE + AP 双通道配网方案，优化配网错误提示和二次重试机制，统筹研发/测试/供应链/合规/电商全链路协作。
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">79%→88%</span>
+                                <span class="metric-label">首连成功率</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">+27pp</span>
+                                <span class="metric-label">弱网场景提升</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">-17%</span>
+                                <span class="metric-label">连接类客诉</span>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">PRD撰写</span>
+                            <span class="tag">BLE配网</span>
+                            <span class="tag">跨团队协作</span>
+                            <span class="tag">海外市场</span>
+                        </div>
+                    </div>
+                    <div class="project-visual">
+                        <div class="visual-frame">
+                            <div class="visual-mockup">
+                                <div class="mockup-header">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <div class="mockup-content">
+                                    <div class="mockup-sidebar"></div>
+                                    <div class="mockup-main">
+                                        <div class="mockup-card"></div>
+                                        <div class="mockup-card"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 项目2 -->
+                <article class="project-card reverse">
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">C端产品 · 用户体验</span>
+                            <span class="project-year">2025.07 – 09</span>
+                        </div>
+                        <h3 class="project-title">睛小豆系列产品优化</h3>
+                        <p class="project-desc">
+                            分析亚马逊海外站点3万+用户评论，针对欧洲用户对订阅制的抵触，推动云存储付费策略调整；组织室外图像场景测试，验证夜视与AI人形识别效果。
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">4.2→4.6</span>
+                                <span class="metric-label">亚马逊评分</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">-12%</span>
+                                <span class="metric-label">差评率</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">+15%</span>
+                                <span class="metric-label">欧洲月销量</span>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">用户评论分析</span>
+                            <span class="tag">竞品研究</span>
+                            <span class="tag">本地化策略</span>
+                            <span class="tag">图像测试</span>
+                        </div>
+                    </div>
+                    <div class="project-visual">
+                        <div class="visual-frame">
+                            <div class="visual-mockup mobile">
+                                <div class="mockup-notch"></div>
+                                <div class="mockup-screen">
+                                    <div class="screen-card"></div>
+                                    <div class="screen-card"></div>
+                                    <div class="screen-card"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 项目3 -->
+                <article class="project-card">
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">服务设计 · 适老化</span>
+                            <span class="project-year">2025.05 – 07</span>
+                        </div>
+                        <h3 class="project-title">广汽集团家用机器人合作项目</h3>
+                        <p class="project-desc">
+                            与广汽集团（GAC）联合，聚焦居家老年人跌倒帮扶场景。开展用户研究与竞品调研，定义老年人最易跌倒的五个场景，形成完整场景流程与交互规则，方案被纳入广汽家用机器人路线评审。
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">5个</span>
+                                <span class="metric-label">核心场景定义</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">纳入</span>
+                                <span class="metric-label">路线评审</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">GAC</span>
+                                <span class="metric-label">联合项目</span>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">用户研究</span>
+                            <span class="tag">服务设计</span>
+                            <span class="tag">适老化</span>
+                            <span class="tag">场景定义</span>
+                        </div>
+                    </div>
+                    <div class="project-visual">
+                        <div class="visual-frame">
+                            <div class="visual-mockup mobile">
+                                <div class="mockup-notch"></div>
+                                <div class="mockup-screen gradient">
+                                    <div class="screen-chart"></div>
+                                    <div class="screen-stats"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 项目4 -->
+                <article class="project-card reverse">
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">智能硬件 · 陪伴产品</span>
+                            <span class="project-year">2025.04 – 07</span>
+                        </div>
+                        <h3 class="project-title">萤石桌面机器人开发项目</h3>
+                        <p class="project-desc">
+                            面向年轻化群体，主导产品功能规划与需求梳理，定义入住仪式、身份卡、亲密值成长、纪念日提醒等模块，构建完整用户旅程；提出猫/狗两种语音形态与灯效编排，目前已进入研发阶段。
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">6+</span>
+                                <span class="metric-label">功能模块定义</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">2种</span>
+                                <span class="metric-label">语音形态</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">研发中</span>
+                                <span class="metric-label">项目状态</span>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">产品规划</span>
+                            <span class="tag">用户旅程</span>
+                            <span class="tag">软硬件联动</span>
+                            <span class="tag">陪伴产品</span>
+                        </div>
+                    </div>
+                    <div class="project-visual">
+                        <div class="visual-frame">
+                            <div class="visual-mockup">
+                                <div class="mockup-header">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <div class="mockup-content">
+                                    <div class="mockup-sidebar"></div>
+                                    <div class="mockup-main">
+                                        <div class="mockup-card"></div>
+                                        <div class="mockup-card"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 实习经历 -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">03</span>
+                <h2 class="section-title">实习经历</h2>
+            </div>
+            <div class="timeline">
+                <!-- 海康威视 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-company">杭州海康威视 · 萤石网络</h3>
+                                <p class="timeline-role">硬件产品经理实习生</p>
+                            </div>
+                            <span class="timeline-date">2025.07 – 2025.09 · 杭州</span>
+                        </div>
+                        <div class="timeline-tags">
+                            <span class="tag">市场调研</span>
+                            <span class="tag">用户研究</span>
+                            <span class="tag">产品规划</span>
+                            <span class="tag">本地化</span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>协同国际市场部筛选分析 3万+ 条亚马逊评论，深度分析 Tapo、360、小米等竞品，形成用户体验基线与竞品分析思路</li>
+                            <li>参与 D210 蓝牙配网升级、PCDN 商业化发布及B端凤凰光学芯片对接等核心项目，负责撰写需求文档并协调研发、测试、市场等部门</li>
+                            <li>推动 App 云服务收费策略调整，云服务差评率由 17%+ 降至 9%，欧洲市场月销量提升约 15%</li>
+                            <li>推动 8 种语言语音包更新与抽检，覆盖欧洲、拉美等市场</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 万维云创 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-company">辽宁万维云创科技</h3>
+                                <p class="timeline-role">产品体验设计实习生 · 云服务业务</p>
+                            </div>
+                            <span class="timeline-date">2023.03 – 2023.09 · 6个月</span>
+                        </div>
+                        <div class="timeline-tags">
+                            <span class="tag">用户调研</span>
+                            <span class="tag">体验优化</span>
+                            <span class="tag">交互设计</span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>对高校智能校园云服务平台展开体验优化，访谈用户 20+，发放 200+ 问卷，分析用户反馈 50+ 条</li>
+                            <li>提炼4类功能结构问题（功能重复25%、信息冗杂30%、界面复杂25%、流程不顺畅20%），输出交互优化建议30条</li>
+                            <li>约 70% 优化建议进入版本迭代，40% 原型直接转化为产品功能；平台日活提升 30%、用户满意度提升 25%</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 海云舟 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-company">海云舟（山东）智能科技</h3>
+                                <p class="timeline-role">C端UI设计 · 医学影像业务</p>
+                            </div>
+                            <span class="timeline-date">2022.12 – 2023.06 · 6个月</span>
+                        </div>
+                        <div class="timeline-tags">
+                            <span class="tag">UI设计</span>
+                            <span class="tag">交互设计</span>
+                            <span class="tag">医疗产品</span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>基于NLM可视化人体数据，参与医学影像交互式学习平台的功能梳理与界面重构</li>
+                            <li>设计三视图联动结构（矢状面/冠状面/横断面）和多种图像模式切换，优化标注流程与学习路径</li>
+                            <li>产品已正式上线商业化，向 10+ 所医学院与附属医院售出 200+ 套授权，课堂影像学习效率提升约 30%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 更多亮点 -->
+    <section class="section hobbies" id="hobbies">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-label">04</span>
+                <h2 class="section-title">其他亮点</h2>
+                <p class="section-desc">论文、专利、奖项与个人特质</p>
+            </div>
+
+            <div class="hobbies-grid">
+                <div class="hobby-card">
+                    <div class="hobby-icon">📄</div>
+                    <h4>学术论文</h4>
+                    <p>英文期刊2篇一作，收录于《Art and Society》和《Frontiers in Art Research》，具备学术研究与写作能力。</p>
+                    <div class="hobby-extra">
+                        <span>2篇一作</span>
+                        <span>英文期刊</span>
+                        <span>2024.08</span>
+                    </div>
+                </div>
+
+                <div class="hobby-card">
+                    <div class="hobby-icon">🏆</div>
+                    <h4>奖项荣誉</h4>
+                    <p>荣获香港信和集团 Design Competition「ESG创新奖」；全国高校数字艺术设计大赛省级二等奖；互联网+大赛市级三等奖。</p>
+                    <div class="hobby-extra">
+                        <span>ESG创新奖</span>
+                        <span>NCDA省级二等奖</span>
+                    </div>
+                </div>
+
+                <div class="hobby-card">
+                    <div class="hobby-icon">📜</div>
+                    <h4>专利与著作权</h4>
+                    <p>持有外观设计专利（202330338382.9）及医疗软件著作权（2023SR0517100），具备从设计到知识产权保护的完整意识。</p>
+                    <div class="hobby-extra">
+                        <span>外观设计专利</span>
+                        <span>软件著作权</span>
+                    </div>
+                </div>
+
+                <div class="hobby-card">
+                    <div class="hobby-icon">🌏</div>
+                    <h4>国际化视野</h4>
+                    <p>香港求学经历，英语 CET6 + IELTS 6，具备跨文化沟通能力，熟悉欧洲、拉美、东南亚等海外市场用户习惯。</p>
+                    <div class="hobby-extra">
+                        <span>IELTS 6</span>
+                        <span>CET-6</span>
+                        <span>海外市场经验</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我 -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-content">
+                    <span class="section-label">05</span>
+                    <h2 class="contact-title">聊聊吧</h2>
+                    <p class="contact-desc">
+                        正在寻找产品经理相关机会，无论是实习、校招还是项目合作，都欢迎联系我。通常24小时内回复。
+                    </p>
+                    <div class="contact-links">
+                        <a href="mailto:luzichong@126.com" class="contact-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <span>luzichong@126.com</span>
+                        </a>
+                        <a href="tel:+8615372236220" class="contact-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <span>+86 153 7223 6220</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-visual">
+                    <div class="floating-shapes">
+                        <div class="shape shape-1"></div>
+                        <div class="shape shape-2"></div>
+                        <div class="shape shape-3"></div>
+                    </div>
+                    <div class="contact-card">
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="name" required placeholder=" ">
+                                <label for="name">你的名字</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" required placeholder=" ">
+                                <label for="email">邮箱地址</label>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" rows="4" required placeholder=" "></textarea>
+                                <label for="message">想说的话</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <span>发送消息</span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="22" y1="2" x2="11" y2="13"/>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">陆子翀</div>
+                <p class="footer-text">香港理工大学 · 智能系统设计 · 2025届</p>
+                <div class="footer-links">
+                    <a href="#about">关于</a>
+                    <a href="#projects">项目</a>
+                    <a href="#experience">经历</a>
+                    <a href="#contact">联系</a>
+                </div>
+                <p class="footer-copyright">© 2025 陆子翀 · 求职产品经理</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
