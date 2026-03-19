@@ -196,6 +196,26 @@ body {
     .nav { padding: 1rem 1.5rem; }
     .nav-links { display: none; }
     .nav-hamburger { display: flex; }
+    
+    /* 移动端 Hero 优化 */
+    .hero { padding: 6rem 1.5rem 4rem; min-height: auto; }
+    .hero-label { font-size: 0.75rem; letter-spacing: 0.15em; }
+    .title-line { font-size: 1.1rem; }
+    .title-name { font-size: clamp(2.5rem, 12vw, 4rem); }
+    .hero-desc { font-size: 1rem; line-height: 1.7; }
+    .hero-cta { flex-direction: column; width: 100%; }
+    .hero-cta .btn { width: 100%; justify-content: center; }
+    .scroll-indicator { display: none; }
+    
+    /* 移动端按钮 */
+    .btn { padding: 0.9rem 1.5rem; font-size: 0.875rem; }
+    
+    /* 移动端 section 间距 */
+    .section { padding: 4rem 0; }
+    .container { padding: 0 1.25rem; }
+    .section-header { margin-bottom: 2.5rem; }
+    .section-title { font-size: 1.75rem; }
+    .section-desc { font-size: 1rem; }
 }
 
 /* 通用 */
@@ -571,8 +591,18 @@ body {
 }
 
 @media (max-width: 640px) {
-    .stats-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+    .stats-grid { grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .stat-number { font-size: 1.75rem; }
+    .stat-plus { font-size: 1.2rem; }
+    .stat-label { font-size: 0.75rem; }
     .skills-grid { grid-template-columns: 1fr; }
+    .skill-card { padding: 1.25rem; }
+    
+    /* 移动端关于我 */
+    .about-headline { font-size: 1.5rem; }
+    .about-text { font-size: 1rem; }
+    .image-placeholder { font-size: 2rem; }
+    .image-decoration { display: none; }
 }
 
 /* 项目 */
@@ -782,8 +812,15 @@ body {
 }
 
 @media (max-width: 640px) {
-    .project-metrics { flex-wrap: wrap; gap: 1rem; }
-    .project-title { font-size: 1.5rem; }
+    .projects-list { gap: 4rem; }
+    .project-metrics { flex-wrap: wrap; gap: 1rem; justify-content: center; }
+    .metric { min-width: 80px; }
+    .metric-value { font-size: 1.4rem; }
+    .project-title { font-size: 1.4rem; }
+    .project-desc { font-size: 1rem; }
+    .project-meta { flex-wrap: wrap; gap: 0.5rem; }
+    .visual-frame { padding: 1rem; }
+    .visual-mockup.mobile { max-width: 160px; }
 }
 
 /* 爱好 */
@@ -853,7 +890,11 @@ body {
 }
 
 @media (max-width: 640px) {
-    .hobbies-grid { grid-template-columns: 1fr; }
+    .hobbies-grid { grid-template-columns: 1fr; gap: 1rem; }
+    .hobby-card { padding: 1.5rem; }
+    .hobby-icon { font-size: 2rem; }
+    .hobby-card h4 { font-size: 1.1rem; }
+    .hobby-card p { font-size: 0.85rem; }
 }
 
 /* 联系 */
@@ -1000,11 +1041,17 @@ body {
 
 @media (max-width: 1024px) {
     .contact-wrapper { grid-template-columns: 1fr; gap: 2rem; }
-    .contact-content { padding-right: 0; }
+    .contact-content { padding-right: 0; order: 1; }
+    .contact-visual { order: 2; }
 }
 
 @media (max-width: 640px) {
-    .contact-title { font-size: 2rem; }
+    .contact { padding: 4rem 0; }
+    .contact-title { font-size: 1.75rem; }
+    .contact-desc { font-size: 1rem; }
+    .contact-card { padding: 1.5rem; }
+    .form-group input, .form-group textarea { padding: 0.875rem; font-size: 16px; }
+    .floating-shapes { display: none; }
 }
 
 /* 教育经历 */
@@ -1192,7 +1239,18 @@ body {
 @media (max-width: 768px) {
     .timeline { padding-left: 1.5rem; }
     .timeline-header { flex-direction: column; gap: 0.5rem; }
-    .timeline-date { white-space: normal; }
+    .timeline-date { white-space: normal; font-size: 0.75rem; }
+    .timeline-content { padding: 1.25rem; }
+    .timeline-company { font-size: 1rem; }
+    .timeline-list li { font-size: 0.85rem; }
+    .timeline::before { left: 0; }
+    .timeline-dot { left: -1.95rem; width: 12px; height: 12px; }
+}
+
+@media (max-width: 480px) {
+    .timeline-item { margin-bottom: 2rem; }
+    .timeline-tags { gap: 0.4rem; }
+    .timeline-tags .tag { font-size: 0.7rem; padding: 0.3rem 0.6rem; }
 }
 
 /* 页脚 */
@@ -1236,4 +1294,28 @@ body {
 .footer-copyright {
     color: var(--text-tertiary);
     font-size: 0.875rem;
+}
+
+/* 移动端底部安全区域 */
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+    .footer { padding-bottom: calc(3rem + env(safe-area-inset-bottom)); }
+    .mobile-menu { padding-bottom: env(safe-area-inset-bottom); }
+}
+
+/* 移动端触摸优化 */
+@media (hover: none) and (pointer: coarse) {
+    .btn:active { transform: scale(0.98); }
+    .skill-card:active, .hobby-card:active { transform: translateY(-2px); }
+    .nav-link:active { color: var(--accent-primary); }
+}
+
+/* 减少动效偏好 */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    .gradient-orb { animation: none; }
+    html { scroll-behavior: auto; }
 }
