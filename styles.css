@@ -1366,3 +1366,548 @@ body {
     .gradient-orb { animation: none; }
     html { scroll-behavior: auto; }
 }
+
+/* ========================================
+   二级页面通用样式
+   ======================================== */
+
+/* 返回链接 */
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-tertiary);
+    text-decoration: none;
+    font-size: 0.875rem;
+    margin-bottom: 2rem;
+    transition: var(--transition-fast);
+}
+
+.back-link:hover {
+    color: var(--accent-primary);
+}
+
+/* 页面头部 */
+.about-header, .contact-header {
+    padding: 8rem 0 4rem;
+    background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+}
+
+.page-title {
+    font-family: var(--font-serif);
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.page-subtitle {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+}
+
+@media (max-width: 768px) {
+    .about-header, .contact-header { padding: 6rem 0 3rem; }
+    .page-title { font-size: 2rem; }
+    .page-subtitle { font-size: 1.1rem; }
+}
+
+/* 关于页面 - 全宽布局 */
+.about-intro { padding: 4rem 0; }
+
+.about-full-grid {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.photo-frame {
+    position: sticky;
+    top: 100px;
+}
+
+.photo-placeholder {
+    width: 100%;
+    aspect-ratio: 3/4;
+    background: linear-gradient(135deg, var(--bg-tertiary) 0%, var(--bg-primary) 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    color: var(--text-tertiary);
+    border: 1px solid var(--border-color);
+}
+
+.about-story h2 {
+    font-family: var(--font-serif);
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-story p {
+    color: var(--text-secondary);
+    line-height: 1.9;
+    margin-bottom: 1.25rem;
+    font-size: 1.05rem;
+}
+
+.quick-facts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.fact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.fact-label { font-size: 1.25rem; }
+.fact-value { font-size: 0.9rem; color: var(--text-secondary); }
+
+@media (max-width: 1024px) {
+    .about-full-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .photo-frame { position: static; max-width: 250px; margin: 0 auto; }
+}
+
+@media (max-width: 640px) {
+    .quick-facts { grid-template-columns: 1fr; }
+}
+
+/* 教育时间线 */
+.education-section {
+    padding: 4rem 0;
+    background: var(--bg-secondary);
+}
+
+.education-section .section-title {
+    font-family: var(--font-serif);
+    font-size: 1.75rem;
+    margin-bottom: 2.5rem;
+}
+
+.edu-timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.edu-timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--accent-primary), transparent);
+}
+
+.edu-item {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.edu-dot {
+    position: absolute;
+    left: -2.45rem;
+    top: 1.5rem;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--accent-primary);
+    border: 3px solid var(--bg-secondary);
+}
+
+.edu-card {
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 1.5rem;
+    transition: var(--transition-normal);
+}
+
+.edu-card:hover {
+    border-color: var(--border-hover);
+}
+
+.edu-card .edu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.edu-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+}
+
+.edu-card .edu-degree {
+    color: var(--accent-primary);
+    font-size: 0.9rem;
+}
+
+.edu-card .edu-year {
+    color: var(--text-tertiary);
+    font-size: 0.8rem;
+}
+
+.edu-details { margin-top: 1rem; }
+
+.edu-courses, .edu-highlight {
+    margin-bottom: 1rem;
+}
+
+.edu-details strong {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5rem;
+}
+
+.course-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.course-tags span {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+}
+
+.edu-highlight p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .edu-timeline { padding-left: 1.5rem; }
+    .edu-dot { left: -1.95rem; }
+    .edu-card .edu-header { flex-direction: column; gap: 0.5rem; }
+}
+
+/* 技能区块 */
+.skills-section-full {
+    padding: 4rem 0;
+}
+
+.skills-section-full .section-title {
+    font-family: var(--font-serif);
+    font-size: 1.75rem;
+    margin-bottom: 2.5rem;
+}
+
+.skills-categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.skill-category h3 {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.skill-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.skill-name {
+    min-width: 140px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.skill-bar {
+    flex: 1;
+    height: 6px;
+    background: var(--bg-tertiary);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.skill-fill {
+    height: 100%;
+    background: var(--accent-gradient);
+    border-radius: 3px;
+    transition: width 1s ease;
+}
+
+@media (max-width: 768px) {
+    .skills-categories { grid-template-columns: 1fr; }
+    .skill-item { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+    .skill-bar { width: 100%; }
+}
+
+/* 工具区块 */
+.tools-section {
+    padding: 4rem 0;
+    background: var(--bg-secondary);
+}
+
+.tools-section .section-title {
+    font-family: var(--font-serif);
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.tools-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.tool-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    transition: var(--transition-fast);
+}
+
+.tool-item:hover {
+    border-color: var(--border-hover);
+    color: var(--text-primary);
+}
+
+/* ========================================
+   联系页面样式
+   ======================================== */
+
+.contact-content-section { padding: 4rem 0; }
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+}
+
+.contact-info h2, .contact-form-section h2 {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contact-method {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    text-decoration: none;
+    transition: var(--transition-normal);
+}
+
+.contact-method:hover {
+    border-color: var(--border-hover);
+    transform: translateX(4px);
+}
+
+.method-icon {
+    color: var(--accent-primary);
+}
+
+.method-label {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.method-value {
+    color: var(--text-primary);
+    font-size: 1rem;
+}
+
+.social-links h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--text-tertiary);
+}
+
+.social-grid {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    transition: var(--transition-fast);
+}
+
+.social-link:hover {
+    border-color: var(--accent-primary);
+    color: var(--accent-primary);
+}
+
+/* 联系表单 */
+.contact-form-full {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 2rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.contact-form-full .form-group {
+    margin-bottom: 1.25rem;
+}
+
+.contact-form-full input,
+.contact-form-full textarea {
+    width: 100%;
+    padding: 1rem;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    transition: var(--transition-fast);
+}
+
+.contact-form-full input:focus,
+.contact-form-full textarea:focus {
+    outline: none;
+    border-color: var(--accent-primary);
+}
+
+.contact-form-full label {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    color: var(--text-tertiary);
+    font-size: 1rem;
+    pointer-events: none;
+    transition: var(--transition-fast);
+}
+
+.contact-form-full input:focus ~ label,
+.contact-form-full input:not(:placeholder-shown) ~ label,
+.contact-form-full textarea:focus ~ label,
+.contact-form-full textarea:not(:placeholder-shown) ~ label {
+    top: -0.5rem;
+    left: 0.5rem;
+    font-size: 0.75rem;
+    color: var(--accent-primary);
+    background: var(--bg-secondary);
+    padding: 0 0.5rem;
+}
+
+.contact-form-full textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+@media (max-width: 1024px) {
+    .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
+}
+
+@media (max-width: 640px) {
+    .form-row { grid-template-columns: 1fr; }
+    .contact-form-full { padding: 1.5rem; }
+}
+
+/* FAQ 区块 */
+.faq-section {
+    padding: 4rem 0;
+    background: var(--bg-secondary);
+}
+
+.faq-section .section-title {
+    font-family: var(--font-serif);
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.faq-item {
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+
+.faq-item h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.faq-item p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .faq-grid { grid-template-columns: 1fr; }
+}
+
+/* 项目链接按钮 */
+.project-link {
+    margin-top: 1rem;
+}
+
+/* 项目 CTA */
+.projects-cta {
+    text-align: center;
+    margin-top: 4rem;
+}
